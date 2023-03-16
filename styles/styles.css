@@ -32,7 +32,7 @@ body {
     padding: 0 15px;
     margin: auto;
 
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
 }
 
 
@@ -112,8 +112,9 @@ body {
 }
 
 .footer {
-    background-color: var(--dark);
 
+    background-color: var(--dark);
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -125,6 +126,10 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent);
+
+    width: 264px;
+    margin-top: 16px;
+
 }
 
 /*----------MAIN---------*/
@@ -282,7 +287,17 @@ display: block;
 }
 
 /*----------PORTFOLIO---------*/
-.filters {}
+.filters_exempls {}
+
+.filters-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 96px;
+    margin: 0;
+    
+
+}
 
 .filters-btn {
     font-family: inherit;
@@ -293,16 +308,35 @@ display: block;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--primary_brand);
+
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 24px;
 }
 
 .filters-btn:is(:hover, :focus) {
     color: var(--white_background);
     background-color: var(--pressed_state);
+
 }
 
-.exempl {}
+.exempl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 72px 0 0 0;
+    padding: 0 0 120px 0;
+    row-gap: 48px;
+    column-gap: 24px;
+}
 
-.exempl-item {}
+.exempl-item {
+    box-sizing: border-box;
+    max-width: 360px;
+    flex-basis: calc((100%-48px)/3);
+    border: 1px solid var(--accent);
+}
 
 .exempl-job {
     font-weight: 500;
@@ -310,6 +344,9 @@ display: block;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding-left: 16px;
 }
 
 .exempl-filter {
@@ -317,4 +354,7 @@ display: block;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding-left: 16px;
 }

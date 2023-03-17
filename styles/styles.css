@@ -42,6 +42,9 @@ body {
 .header > .container {
     display: flex;
     justify-content: space-between;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
     
 }
 

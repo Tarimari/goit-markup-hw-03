@@ -28,7 +28,14 @@ ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .list {
+
     list-style: none;
 }
 
@@ -42,6 +49,14 @@ ul {
     margin: auto;
 
     outline: 1px solid orange;
+}
+
+.visually_hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 
@@ -131,9 +146,13 @@ ul {
 }
 
 .footer {
-
     background-color: var(--dark);
-    padding: 100px 0;
+}
+
+.footer_logo-text {
+    padding-top: 100px;
+    padding-left: 141px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -147,7 +166,6 @@ ul {
     color: var(--accent);
 
     width: 264px;
-    margin-top: 16px;
 
 }
 
@@ -208,9 +226,7 @@ ul {
     margin: 0;
 }
 
-.targets-item {
-    display: block;
-}
+.targets-item {}
 
 .targets-main {
     font-weight: 500;
@@ -272,10 +288,17 @@ ul {
 .team-list {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 120px;
 }
 
 .team-item {
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--white_background);
+}
+
+.team_person-job {
+    padding: 32px 16px;
+    margin: 0;
 }
 
 .team-person {
@@ -286,7 +309,8 @@ ul {
     letter-spacing: 0.02em;
     color: var(--dark);
 
-    padding: 32px auto 0;
+    padding-bottom: 8px;
+
 }
 
 .team-job {
@@ -296,7 +320,6 @@ ul {
     letter-spacing: 0.02em;
     color: var(--text);
 
-    margin: 8px auto 32px;
 }
 
 /*----------PORTFOLIO---------*/
@@ -349,6 +372,11 @@ ul {
     max-width: 360px;
     flex-basis: calc((100% - 48px) / 3);
     border: 1px solid var(--accent);
+    background-color: var(--white_background);
+}
+
+.exempl-job_filter {
+    padding: 32px 0;
 }
 
 .exempl-job {
@@ -357,9 +385,9 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    margin-top: 32px;
-    margin-bottom: 0;
+
     padding-left: 16px;
+    padding-bottom: 8px;
 }
 
 .exempl-filter {
@@ -367,7 +395,6 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
-    margin-top: 8px;
-    margin-bottom: 32px;
+
     padding-left: 16px;
 }

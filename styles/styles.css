@@ -109,6 +109,7 @@ img {
 }
 
 .header-list {
+    display: flex;
     margin-left: 76px;
     gap: 40px;
 }
@@ -136,10 +137,6 @@ img {
     margin: 0;
 }
 
-.header-list {
-    display: flex;
-    margin: 0;
-}
 
 .header-contacts {
     font-style: normal;

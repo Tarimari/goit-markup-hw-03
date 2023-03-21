@@ -86,8 +86,8 @@ img {
     padding: 24px 0;
 }
 
-.header-navigat:last-child {
-    margin: 0;
+.header-list:last-child {
+    margin-left: 76px;
 }
 
 .logo {
@@ -110,7 +110,6 @@ img {
 
 .header-list {
     display: flex;
-    margin-left: 76px;
     gap: 40px;
 }
 
@@ -175,14 +174,15 @@ img {
 }
 
 /*----------MAIN---------*/
+.face {
+    background-color: var(--dark);
+}
+
 .face-conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark);
-    padding-left: 316px;
-    padding-right: 316px;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -213,9 +213,9 @@ img {
     cursor: pointer;
 
     padding-top: 16px;
-padding-bottom: 16px;
-padding-left: 32px;
-padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
     border-radius: 4px;
     border: none;
 }
@@ -363,9 +363,12 @@ padding-right: 32px;
     cursor: pointer;
     color: var(--primary_brand);
 
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
     border: 1px solid var(--accent);
     border-radius: 4px;
-    height: 48px;
 }
 
 .filters-btn:is(:hover, :focus) {

@@ -86,7 +86,9 @@ img {
     padding: 24px 0;
 }
 
-.header-list:last-child {
+.header-navigate-list {
+    display: flex;
+    gap: 40px;
     margin-left: 76px;
 }
 
@@ -108,7 +110,7 @@ img {
     color: var(--dark);
 }
 
-.header-list {
+.header-adress-list {
     display: flex;
     gap: 40px;
 }
@@ -176,6 +178,8 @@ img {
 /*----------MAIN---------*/
 .face {
     background-color: var(--dark);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .face-conteiner {
@@ -183,8 +187,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+
 }
 
 .face-text {
@@ -224,7 +227,7 @@ img {
     background-color: var(--pressed_state);
 }
 
-.targets-conteiner {
+.targets {
     padding-top: 120px;
     padding-bottom: 120px;
 
@@ -258,7 +261,7 @@ img {
     margin: 0;
 }
 
-.activity-conteiner {
+.activity {
     padding-top: 0;
     padding-bottom: 120px;
 }
@@ -282,7 +285,7 @@ img {
 
 }
 
-.team-conteiner {
+.team {
     background-color: var(--light);
 
     padding-top: 120px;
@@ -341,7 +344,7 @@ img {
 }
 
 /*----------PORTFOLIO---------*/
-.filters_exempl {
+.filters {
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -382,7 +385,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 72px 0 0 0;
-    padding: 0 0 120px 0;
     row-gap: 48px;
     column-gap: 24px;
 }
